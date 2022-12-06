@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F89960B4-B05C-4E51-A63B-00574F433177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FinalExamCell</RootNamespace>
+    <AssemblyName>FinalExamCell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class Details.Designer.cs">
+      <DependentUpon>class Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class_report.Designer.cs">
+      <DependentUpon>class_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="External_exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External_exam.Designer.cs">
+      <DependentUpon>External_exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="individual_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="individual_report.Designer.cs">
+      <DependentUpon>individual_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internal_exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internal_exam.Designer.cs">
+      <DependentUpon>Internal_exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="percent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="percent.Designer.cs">
+      <DependentUpon>percent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pract_Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pract_Exam.Designer.cs">
+      <DependentUpon>Pract_Exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reset_pwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reset_pwd.Designer.cs">
+      <DependentUpon>reset_pwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result.Designer.cs">
+      <DependentUpon>result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_details.Designer.cs">
+      <DependentUpon>s_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_Enroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Enroll.Designer.cs">
+      <DependentUpon>S_Enroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDExamDataSet.cs">
+      <DependentUpon>UIDExamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UIDExamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDExamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UIDExamDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDExamDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UIDExamDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDExamDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UIDExamDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDExamDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="class Details.resx">
+      <DependentUpon>class Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="class_report.resx">
+      <DependentUpon>class_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External_exam.resx">
+      <DependentUpon>External_exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="individual_report.resx">
+      <DependentUpon>individual_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internal_exam.resx">
+      <DependentUpon>Internal_exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="percent.resx">
+      <DependentUpon>percent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pract_Exam.resx">
+      <DependentUpon>Pract_Exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reset_pwd.resx">
+      <DependentUpon>reset_pwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result.resx">
+      <DependentUpon>result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_details.resx">
+      <DependentUpon>s_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Enroll.resx">
+      <DependentUpon>S_Enroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="C:\Users\KARISHMA\Desktop\ClassDiagram3.cd">
+      <Link>ClassDiagram3.cd</Link>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UIDExamDataSet.xsc">
+      <DependentUpon>UIDExamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDExamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UIDExamDataSet.xss">
+      <DependentUpon>UIDExamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet1.xsc">
+      <DependentUpon>UIDExamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDExamDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UIDExamDataSet1.xss">
+      <DependentUpon>UIDExamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet2.xsc">
+      <DependentUpon>UIDExamDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDExamDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UIDExamDataSet2.xss">
+      <DependentUpon>UIDExamDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet3.xsc">
+      <DependentUpon>UIDExamDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UIDExamDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDExamDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UIDExamDataSet3.xss">
+      <DependentUpon>UIDExamDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rtccs_clg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clg_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\results.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
